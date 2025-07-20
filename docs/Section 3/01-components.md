@@ -46,7 +46,10 @@ Its being used as value for render(); method `render(<App >)`.
 - render() method is called on an object that's created with abither method, the `createdRoot()` method. 
 - It takes an existing HTML element as an input, so an element that's not being created by React but is part of the index.html file already (e.g - `<div id="root"></div>`) and injects it into this element.
 
-ℹ️ Custom Components must start with uppercase character to tell React it's a custom component and to avoid being confused with build-in elements like header, div, img etc.
+<div style="background-color: #00bfff3a; ; border-radius: 5px; padding: 10px">
+<div style="color: #00bfffff; font-weight: bold;"> ℹ️ NOTE: </div>
+Custom components must start with an uppercase character. This tells React that it's a custom component and prevents confusion with built-in HTML elements like <span style="color: #00bfffff; font-weight: italic;">header</span>, <span style="color: #00bfffff; font-weight: italic;">div</span>, <span style="color: #00bfffff; font-weight: italic;">img</span>, etc.
+</div>
 
 ## Chapter 02: Passing & Output Dynamic Values
 
@@ -72,3 +75,9 @@ To load and include assets
 
 This makes sure that the image is included in the final page and deployment package during the build process. 
 Here `reactImg` is a Javascript object / variable which points to the image.
+
+<hr>
+
+<div style="float: right">
+    <a href="./02-props.md">Next Read - Props</a>
+</div>
