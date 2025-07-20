@@ -48,4 +48,27 @@ Its being used as value for render(); method `render(<App >)`.
 
 ℹ️ Custom Components must start with uppercase character to tell React it's a custom component and to avoid being confused with build-in elements like header, div, img etc.
 
-## Passing & Outout Dynamic Values
+## Chapter 02: Passing & Output Dynamic Values
+
+Using `{}` curly braces it allows us to use any JavaScript expression between the JSX code.
+
+``` 
+<p>
+    {1+1} 
+</p>
+```
+
+### Import assets
+
+To load and include assets 
+- Instead of using as <br>
+`<img src="src/assets/react-core-concepts.png" alt="Stylized atom" />` <br>
+- We can import the image using and use it like component <br>
+    ```
+    import reactImg from './assets/react-core-concepts.png'
+    ...
+    <img src={reactImg} alt="Stylized atom" />
+    ```
+
+This makes sure that the image is included in the final page and deployment package during the build process. 
+Here `reactImg` is a Javascript object / variable which points to the image.
