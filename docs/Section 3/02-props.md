@@ -130,8 +130,49 @@ It's a good practice to keep different components in different files, if two com
     This structure helps keep your components and their styles organized and easy to maintain.
 
 
+## Chapter 05: Children Prop
 
+If you pass something between the component opening and closing tag, as below  
+```
+<TabButton>Components</TabButton>
+```
+The content by default will not be output on the page as React would not know where to output it.
 
+For this, 
+- Go to Component.jsx and accept props in there.
+- Use `{props.children}` where you want the text to be output.
+
+```
+export default function TabButton(props) {
+  return (
+    <li>
+      <button>{props.children}</button>
+    </li>
+  );
+}
+```
+
+Alternatively, 
+
+You can use object destructing here, 
+
+```
+export default function TabButton({children}) {
+  return (
+    <li>
+      <button>{children}</button>
+    </li>
+  );
+}
+```
+
+- Every custom component by default will receive props.
+- If you won;t set any attribute, React  by-default will give such a props object.
+- Prop object will have children prop within it. 
+- This Prop is set by React, it refers to the content (text / JSX) between your component tag.
+
+> [!TIP]
+> This way of building Components, where your Components can wrap other Components is called **Component Composition**.
 
 <hr>
 
