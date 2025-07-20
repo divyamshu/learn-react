@@ -69,6 +69,70 @@ function CoreConcept({image, title, description}) {
 }
 ```
 
+## Chapter 04: Best Practice - Storing Components in Files
+
+It's a good practice to keep different components in different files, if two components are closely related then we keep two or more components in same file.
+
+- Create a folder for components.
+- Create a JSX file for your component like `CoreConcept.jsx` and `Header.jsx`.
+- Move your code from `App.jsx` to each component file.
+- Make sure to add export default keyword before the component function
+
+  ```
+  export default function CoreConcept({image, title, description}) {
+    return (
+        <li>
+        <img src={image} alt={title} />
+        <h3>{title}</h3>
+        <p>{description}</p>
+        </li>
+      );
+    }
+  ```
+- Import this component in App.jsx
+  ```
+  import Header from "./components/Header.jsx";
+  
+  function App() {
+  return (
+    <Header />
+    );
+  }
+  ``` 
+
+- Moving the Component to a folder dedicated to the component will make things easier to keep relevant files like CSS for the component.
+
+    This structure helps keep your components and their styles organized and easy to maintain.
+
+    ```
+        learn-react/
+        ├── src/
+        │   ├── components/
+        │   │   └── Header/
+        |   |       ├── Header.jsx
+        │   │       └── Header.css 
+        │   ├── data.js
+        │   ├── App.jsx
+        │   ├── index.css
+        │   └── index.jsx
+        ├──index.html
+        ├── package.json
+        └── README.md
+    ```
+
+    And Importing it within Component.JSX
+
+    ```
+    import './Header.css';
+    ```
+    
+
+    This structure helps keep your components and their styles organized and easy to maintain.
+
+
+
+
+
 <hr>
 
 <div style="display: flex; justify-content: space-between;">
