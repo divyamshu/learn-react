@@ -46,9 +46,8 @@ Its being used as value for render(); method `render(<App >)`.
 - render() method is called on an object that's created with abither method, the `createdRoot()` method. 
 - It takes an existing HTML element as an input, so an element that's not being created by React but is part of the index.html file already (e.g - `<div id="root"></div>`) and injects it into this element.
 
-<div style="background-color: #00bfff3a; ; border-radius: 5px; padding: 10px">
-<div style="color: #00bfffff; font-weight: bold;"> ℹ️ NOTE: </div>
-Custom components must start with an uppercase character. This tells React that it's a custom component and prevents confusion with built-in HTML elements like <span style="color: #00bfffff; font-weight: italic;">header</span>, <span style="color: #00bfffff; font-weight: italic;">div</span>, <span style="color: #00bfffff; font-weight: italic;">img</span>, etc.
+> [!NOTE] 
+> Custom components must start with an uppercase character. This tells React that it's a custom component and prevents confusion with built-in HTML elements like `header`, `div`, `img` etc.
 </div>
 
 ## Chapter 02: Passing & Output Dynamic Values
