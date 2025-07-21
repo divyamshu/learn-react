@@ -1,9 +1,14 @@
 import { CORE_CONCEPTS } from "./data";
 import Header from "./components/Header/Header.jsx";
-import CoreConcept from "./components/CoreConcept.jsx"; 
+import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
 
 function App() {
+  function handleSelect(selectedButton) {
+    // selectedButton => 'components', 'JSX', 'Props', 'State'
+    console.log(selectedButton);
+  }
+
   return (
     <div>
       <Header />
@@ -11,9 +16,8 @@ function App() {
         <section id="core-concepts">
           <h2>Time to get started!</h2>
           <ul>
-            <CoreConcept {...CORE_CONCEPTS[0]}
-            /> {/* Using Object Destructing */}
-
+            <CoreConcept {...CORE_CONCEPTS[0]} />{" "}
+            {/* Using Object Destructing */}
             <CoreConcept
               title={CORE_CONCEPTS[1].title}
               description={CORE_CONCEPTS[1].description}
@@ -34,11 +38,14 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={() => handleSelect("components")}>
+              Components
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("jsx")}>JSX</TabButton>
+            <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
+            <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
+          Dynamic Content
         </section>
       </main>
     </div>
