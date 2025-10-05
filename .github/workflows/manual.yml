@@ -1,0 +1,28 @@
+name: Manual workflow
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        default: 'World'
+        required: true
+        type: string
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send greeting
+      run: |
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        chmod a+x /usr/local/bin/yq
+        
+    - name: Checkout
+      uses: actions/checkout@v5
+      with:
+        path: main
+
+    - name: YQ File
+      run: |
+        yq e '.a.b = "new" | . style="single"' -i test123.yaml
