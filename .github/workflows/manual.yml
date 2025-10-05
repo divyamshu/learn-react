@@ -25,5 +25,5 @@ jobs:
 
     - name: YQ File
       run: |
-        yq e '.a.b = "new" | . style="single"' -i test123.yaml
+        yq e '.a.b = "new" | .a.b style="single"' -i test123.yaml
         cat test123.yaml
