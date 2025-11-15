@@ -26,9 +26,11 @@ For this we need to output some fallback text like "Please select a topic" if we
     <code> {EXAMPLES[selectedTopic].code}</code>
     </pre>
     ```
-## We have 3 different approaches to Output Conditionally
+## Chapter 11: Output Conditionally
 
-### Approach 01 - Using Turnery Operator
+We have 3 different approaches to Output Conditionally
+
+### Approach 01 - Using Ternary Operator
 
 #### 01 Simple Approach
 ```
@@ -97,3 +99,41 @@ return (
     </div>
   );
 ```
+## Chapter 12: Dynamic Styling
+
+To enable styling like enabling the `active` class when a button is selected you can add the class to the button using `className`. Example - <br>
+```
+<button className="active" onClick={onSelect}>
+    {children}
+</button> 
+```
+
+But as this will add to every button component, so our goal is to set this dynamically. To do so - 
+
+1. Accept a new prop example - `isSelected` as boolean.
+   
+2. Then dynamically set the className and other attributes using ternary expression <br>
+   
+    ```
+   <li>
+     <button className={isSelected ? 'active' : undefined} onClick={onSelect}>
+       {children}
+     </button>
+    </li>
+    ```
+
+3. Add the prop `isSelected` in the TabButton component as set it equal to value which is derived dynamically based on state. 
+   
+   ```
+   <TabButton isSelected={selectedTopic === 'components'} onSelect={() => handleSelect('components)}>
+     Components
+   </TabButton>
+   ```
+
+
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./04-state.md">Previous Read - State</a>
+    <a href="./06-">Next Read -  Dynamic Styling</a>
+</div>

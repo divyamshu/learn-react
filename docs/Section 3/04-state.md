@@ -1,3 +1,6 @@
+# State
+
+## Chapter 09: Why we need State
 To move further and use the event to make changes to the visible UI, let's initialize a variable `tabContent` with value **Please click a button** in the App() function.
 
 ```
@@ -69,7 +72,7 @@ For Example, the `function App()` function component is first encountered in `in
 
 React **compares** the **old output** ("old JSX code") of your component function to the **new output** ("new JSX code") and **applies any differences** to the actual website UI.
 
-# State
+## Chapter 10: Concept about State
 
 As you noticed above, we can't use a regular variable like `tabContent` to render dynamic content as the `function App()` component is not executing again.
 
