@@ -2,13 +2,20 @@ import { CORE_CONCEPTS } from "./data";
 import Header from "./components/Header/Header.jsx";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
+import { useState } from "react";
 
 function App() {
-  let tabContent = 'Please click a button';
+  
+  // let tabContent = 'Please click a button';
+
+  // const stateArray = useState('Please click a button'); [Alterivative way to write useState]
+  const [selectedTopic, setSelectedTopic] = useState('Please click a button');
+
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'JSX', 'Props', 'State'
-    tabContent = selectedButton;
-    console.log(selectedButton);
+    // tabContent = selectedButton; [Won't Work because tabContent is not reactive]
+    setSelectedTopic(selectedButton);
+    console.log(selectedTopic);
   }
 
   return (
@@ -47,7 +54,7 @@ function App() {
             <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
             <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
-          {tabContent}
+          {selectedTopic}
         </section>
       </main>
     </div>
