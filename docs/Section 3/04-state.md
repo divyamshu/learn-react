@@ -156,5 +156,5 @@ When we call `setSelectedTopic` React in the end schedules, this state update an
 
 <div style="display: flex; justify-content: space-between;">
     <a href="./03-events.md">Previous Read - Props</a>
-    <a href="">Next Read - </a>
+    <a href="./05-conditional-rendering.md">Next Read -  Rendering Content Conditionally</a>
 </div>
