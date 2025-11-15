@@ -27,3 +27,5 @@ npm run dev
 - ### [05 Rendering Content Conditionally](/docs/Section%203/05-conditional-rendering.md)
     - [Chapter 11: Output Conditionally](./docs/Section%203/05-conditional-rendering.md#chapter-11-output-conditionally)
     - [Chapter 12: Dynamic Styling](./docs/Section%203/05-conditional-rendering.md#chapter-12-dynamic-styling)
+- ### [06 Outputting List Data Dynamically](/docs/Section%203/06-dynamic-data-list.md)
+    - [Chapter 13: Dynamically Rendering using Array](./docs/Section%203/06-dynamic-data-list.md#chapte-13-dynamically-rendering-using-array)
