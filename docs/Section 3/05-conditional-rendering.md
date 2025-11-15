@@ -135,5 +135,5 @@ But as this will add to every button component, so our goal is to set this dynam
 
 <div style="display: flex; justify-content: space-between;">
     <a href="./04-state.md">Previous Read - State</a>
-    <a href="./06-">Next Read -  Dynamic Styling</a>
+    <a href="./06-dynamic-data-list.md">Next Read - Outputting List Data Dynamically</a>
 </div>
