@@ -4,8 +4,10 @@ import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
 
 function App() {
+  let tabContent = 'Please click a button';
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'JSX', 'Props', 'State'
+    tabContent = selectedButton;
     console.log(selectedButton);
   }
 
@@ -45,7 +47,7 @@ function App() {
             <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
             <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
-          Dynamic Content
+          {tabContent}
         </section>
       </main>
     </div>

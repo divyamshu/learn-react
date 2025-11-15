@@ -1,5 +1,12 @@
 # React Framework
-This repository helps you learn React JS and includes code bases with details
+This repository helps you learn React JS and includes code bases with details.
+
+To execute this process locally run
+
+```
+npm install .
+npm run dev
+```
 
 ## Section 03
 - ### [01 Components](./docs/Section%203/01-components.md)
