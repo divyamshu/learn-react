@@ -10,7 +10,7 @@ function App() {
   // let tabContent = 'Please click a button';
 
   // const stateArray = useState('Please click a button'); [Alterivative way to write useState]
-  const [selectedTopic, setSelectedTopic] = useState('components');
+  const [selectedTopic, setSelectedTopic] = useState();
 
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'JSX', 'Props', 'State'
@@ -19,6 +19,19 @@ function App() {
     console.log(selectedTopic);
   }
 
+  // Approach 03
+  // let tabContent = <p>Please select a topic</p>;
+
+  // if (selectedTopic) {
+  //   tabContent = (
+  //     <div id="tab-content">
+  //       <h3>{EXAMPLES[selectedTopic].title}</h3>
+  //       <p>{EXAMPLES[selectedTopic].description}</p>
+  //       <pre>
+  //         <code> {EXAMPLES[selectedTopic].code}</code>
+  //       </pre>
+  //     </div>);
+  // }
   return (
     <div>
       <Header />
@@ -55,13 +68,20 @@ function App() {
             <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
             <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
-          <div id="tab-content">
-            <h3>{EXAMPLES[selectedTopic].title}</h3>
-            <p>{EXAMPLES[selectedTopic].description}</p>
-            <pre>
-              <code> {EXAMPLES[selectedTopic].code}</code>
-            </pre>
-          </div>
+          {/* Approach 02 */}
+          {/* {!selectedTopic && <p>Please select a topic</p>} */}
+
+          {/* Approach 01 */}
+          {!selectedTopic ? <p>Please select a topic</p> : (
+            <div id="tab-content">
+              <h3>{EXAMPLES[selectedTopic].title}</h3>
+              <p>{EXAMPLES[selectedTopic].description}</p>
+              <pre>
+                <code> {EXAMPLES[selectedTopic].code}</code>
+              </pre>
+            </div>)}
+          {/* Approach 03 */}
+          {/* {tabContent} */}
         </section>
       </main>
     </div>
