@@ -1,14 +1,4 @@
-# React Framework
-This repository helps you learn React JS and includes code bases with details.
-
-To execute this process locally run
-
-```
-npm install .
-npm run dev
-```
-
-## Section 03
+# Section 03: React Essentials - Components, JSX, Props, State & More
 - ### [01 Components](./docs/Section%203/01-components.md)
     - [JSX & React Component](./docs/Section%203/01-components.md#jsx--react-component)
     - [Rules to create Components Function](./docs/Section%203/01-components.md#rules-to-create-components-function)
@@ -29,7 +19,3 @@ npm run dev
     - [Chapter 12: Dynamic Styling](./docs/Section%203/05-conditional-rendering.md#chapter-12-dynamic-styling)
 - ### [06 Outputting List Data Dynamically](/docs/Section%203/06-dynamic-data-list.md)
     - [Chapter 13: Dynamically Rendering using Array](./docs/Section%203/06-dynamic-data-list.md#chapte-13-dynamically-rendering-using-array)
-
-## Section 04
-- ### [01 React.createElement](./docs/Section%204/01-createElement.md)
-- ### [02 Fragments](./docs/Section%204/02-fragments.md)
