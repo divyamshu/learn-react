@@ -4,7 +4,6 @@ import Example from "./components/Examples.jsx";
 
 function App() {
 
-  
   return (
     <div>
       <Header />
