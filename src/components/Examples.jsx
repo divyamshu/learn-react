@@ -46,7 +46,8 @@ export default function Example({ id, title, ...props }) {
             </menu> */}
 
             {/* Adding Tabs Component - JSX slots */}
-            <Tabs buttons={
+            <Tabs ButtonContainer="menu" 
+            buttons={
                 <>
                 <TabButton onSelected={selectedTopic === 'components'} onSelect={() => handleSelect("components")}>
                     Components
