@@ -36,3 +36,4 @@ npm run dev
 - ### [03 Forwarding Props](./03-forwarding-props.md)
 - ### [04 JSX Slots](./04-jsx-slots.md)
 - ### [05 Setting Component Types Dynamically](./05-setting-component-types-dynamically.md)
+- ### [06 Setting Default Prop Values](./06-default-prop-values.md)
