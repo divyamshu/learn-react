@@ -52,3 +52,9 @@ export default function Tabs({children, buttons}) {
 }>
 </Tabs>
 ```
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./03-forwarding-props.md">Previous Read - Forwarding Props</a>
+    <a href="./05-setting-component-types-dynamically.md">Next Read - Setting Components Types Dynamically</a>
+</div>

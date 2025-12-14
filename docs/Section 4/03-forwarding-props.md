@@ -71,3 +71,10 @@ const ref = React.createRef();
 
 >[!IMPORTANT]
 >As of React 19, forwardRef for function components is deprecated and replaced by a simpler model, but the underlying concept remains relevant for managing DOM access.
+
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./02-fragments.md">Previous Read - Fragments</a>
+    <a href="./04-jsx-slots.md">Next Read - JSX Slots</a>
+</div>

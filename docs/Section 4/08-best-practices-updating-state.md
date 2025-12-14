@@ -97,7 +97,7 @@ function handleEditClick() {
 }
 ```
 
-#### By using function form
+### Why use function form
 
 ```
 import {useState} from 'react';
@@ -123,3 +123,10 @@ And that's **why it's considered a good practice to use this function form**
 
 >[!IMPORTANT]
 >When using the function form, you simply have a guarantee by React that you'll always be working with the latest available state value
+
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./07-image-storage.md">Previous Read - Image Storage</a>
+    <a href="./09-user-input-two-way-binding.md">Next Read - User Input and Two way Binding</a>
+</div>

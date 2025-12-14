@@ -30,3 +30,10 @@ Here, if we don;t pass the valuye from `Examples.jsx` for ButtonContainer it'll 
 }>{tabContent}
 </Tabs>
 ```
+
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./05-setting-component-types-dynamically.md">Previous Read - Setting Components Types Dynamically</a>
+    <a href="./07-image-storage.md">Next Read - Image Storage</a>
+</div>

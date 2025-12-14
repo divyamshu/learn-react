@@ -20,3 +20,11 @@ Instead, files stored in `src/` (and subfolders) can be used in your code files.
 You should use the `public/` folder for any images that should not be handled by the build process and that should be generally available. Good candidates are images used directly in the index.html file or favicons.
 
 On the other hand, images that are used inside of components should typically be stored in the `src/` folder (e.g., in `src/assets/`).
+
+
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./06-default-prop-values.md">Previous Read - Default Prop Values</a>
+    <a href="./08-best-practices-updating-state.md">Next Read - Best Practice: Updating State Based On Old State Correctly</a>
+</div>

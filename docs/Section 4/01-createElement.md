@@ -25,3 +25,8 @@ It's an alternative of JSX you can use, if you don't want to do the build proces
   --- index.jsx ---
   ReactDOM.createRoot(entryPoint).render(React.createElement(App));
   ```
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./02-fragments.md">Next Read - Fragments</a>
+</div>

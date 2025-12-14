@@ -114,3 +114,10 @@ export default function Tabs({children, buttons, ButtonContainer}) {
 }>{tabContent}
 </Tabs>
 ```
+
+<hr>
+
+<div style="display: flex; justify-content: space-between;">
+    <a href="./04-jsx-slots.md">Previous Read - JSX Slots</a>
+    <a href="./06-default-prop-values.md">Next Read - Default Props Values</a>
+</div>
